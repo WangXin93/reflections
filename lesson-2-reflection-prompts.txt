@@ -1,0 +1,33 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+    I need to specify a directory or it will init repository in current directory.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+    
+    Staging area is ready to commit to repository, and use it we don’t need to commit all file, especially when some file is big and stable, instead we can choose to keep it out of staging area. 
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+    I can add changed file to staged area, and use ‘git diff —-staged’ to make sure I have make a correct logical change, and then commit my change. 
+    It can help me to only commit the content already add to staged area, because when I work a lot on working directory, may be I only want to commit tiny part to a new commit.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+    Branches can help build different versions without affect master version. For example, add some special function for individual user. Or, it can be used to fix bug, then merge to master branch.
+
+How do the diagrams help you visualize the branch structure?
+
+    Diagram can help me know where start the difference between different branches.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+    The branch will be merged into another(the later params of git merge), and the other branch will stop at its top, i.e. the one before merge commit. changes on master and branch will combine together, we can see in graph two line are turned into one line.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
+
+    Automatic merging can’t prove code can run, for example, origin version is A,B,D, Joe write a version of B,D,E, Rachel write a version of A,B,C,D, automatic merging get result B,C,D,E, but if C code need A as dependency, the merging code can’t run in this case. Manually merging can prove this case to run, and can solver convict in same position like Joe write B’ and Rachel write B’’, but it need programmer to exchange their ideas, and need more time.
