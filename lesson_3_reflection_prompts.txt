@@ -30,3 +30,4 @@ When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
     When I want to develop a independent function or I want to maintain the master stable version, I will choose to work on separate branch, until I make sure the branch can work better while merging master branch.
+    Work on master can avoid merging conflict though. When I finish branch work, I could encounter problems to merging master branch, but directly work on master branch can keep me on the top of master, without worry changes happened on master when I develop new things.
