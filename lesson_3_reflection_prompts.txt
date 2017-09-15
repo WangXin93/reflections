@@ -18,14 +18,15 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    I don’t know yet. Maybe it help me to be able to  merge local master to origin locally offline, and push it when I am online.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    I don’t know yet. I think it must share file firstly, and need a communication tool.
+I guess we can use local area network. 
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    When I want to develop a independent function or I want to maintain the master stable version, I will choose to work on separate branch, until I make sure the branch can work better while merging master branch.
