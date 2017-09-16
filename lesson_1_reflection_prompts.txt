@@ -1,3 +1,5 @@
+Here test push a branch when prompt on bash is master.
+
 How did viewing a diff between two versions of a file help you see the bug that
 was introduced?
 
